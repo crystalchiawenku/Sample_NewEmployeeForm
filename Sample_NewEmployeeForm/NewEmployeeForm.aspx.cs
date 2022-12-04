@@ -41,21 +41,15 @@ public partial class NewEmployeeForm : System.Web.UI.Page
 
     protected void Button1_Click1(object sender, EventArgs e)
     {
+        Response.Write("Name:" + TextBox1.Text + "<br/>");
+        Response.Write("Gender:" + RadioButtonList1.SelectedItem.Text + "<br/>");
+        Response.Write("Date of Birth:" + Calendar1.SelectedDate.ToShortDateString());
 
         if (RadioButtonList1.SelectedValue == "M")
         {
-            Response.Write("Name:" + TextBox1.Text + "<br/>");
-            Response.Write("Gender:" + RadioButtonList1.SelectedItem.Text + "<br/>");
             Response.Write("Military Status:" + RadioButtonList2.SelectedItem.Text + "<br/>");
-            Response.Write("Date of Birth:" + Calendar1.SelectedDate.ToShortDateString());
         }
 
-        else
-        {
-            Response.Write("Name:" + TextBox1.Text + "<br/>");
-            Response.Write("Gender:" + RadioButtonList1.SelectedItem.Text + "<br/>");
-            Response.Write("Date of Birth:" + Calendar1.SelectedDate.ToShortDateString());
 
-        }
     }
 }

@@ -72,7 +72,7 @@
                 <WeekendDayStyle BackColor="#FFFFCC" />
             </asp:Calendar>
 
-            <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click1" />   
+            <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click1" style="font-family: Candara" />   
 
         </div>
     </form>
