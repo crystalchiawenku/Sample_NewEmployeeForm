@@ -15,14 +15,15 @@
 <body style="font-family: Candara">
     <form id="form1" runat="server">
         <div>
+            <br />
             Name
-           <asp:TextBox ID="TextBox1" runat="server" required>
+           <asp:TextBox ID="TextBox1" runat="server" required style="margin-bottom: 0px">
            </asp:TextBox>
             <br />
             Gender
             <asp:RadioButtonList ID="RadioButtonList1" runat="server" style="font-family: Candara" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged1" AutoPostBack="True">
-                <asp:ListItem Value="M">Male(男性)</asp:ListItem>
-                <asp:ListItem Value="F">Female(女性)</asp:ListItem>
+                <asp:ListItem Value="M">Male</asp:ListItem>
+                <asp:ListItem Value="F">Female</asp:ListItem>
 
             </asp:RadioButtonList>
 
@@ -33,16 +34,15 @@
                         <asp:ListItem Value="NotYet">未役</asp:ListItem>
                         <asp:ListItem Value="NoNeed">免役</asp:ListItem>
                         <asp:ListItem Value="Completed">役畢</asp:ListItem>
-                        <asp:ListItem Value="Others">其他(請說明)</asp:ListItem>
                     </asp:RadioButtonList>
-                    <asp:TextBox ID="TextBox2" runat="server" AutoPostBack="True" CssClass="auto-style1" ></asp:TextBox>
-                    <asp:Label ID="Label1" runat="server" ForeColor="#FF3300"></asp:Label>
                     <br class="auto-style1" />
             </asp:Panel>
 
                 
                 <br />
-            Date of Birth? <br />
+            Date of Birth? 
+
+            <br />
             Year<asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
             </asp:DropDownList>
 &nbsp;Month
@@ -71,29 +71,9 @@
                 <TodayDayStyle BackColor="#CCCCCC" ForeColor="Black" />
                 <WeekendDayStyle BackColor="#FFFFCC" />
             </asp:Calendar>
-            <br />
 
+            <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click1" />   
 
-                
-                <br />
-                    
-
-
-
-                <br />
-                <asp:Button ID="Button1" runat="server" style="font-family: Candara" Text="Submit" />
-                <br />
-                <br />
-                    
-
-
-
-
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
         </div>
     </form>
 </body>
